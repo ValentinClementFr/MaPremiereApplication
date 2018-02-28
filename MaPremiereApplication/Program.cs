@@ -7,57 +7,76 @@ using System.Threading.Tasks;
 namespace MaPremiereApplication
 {
     class Program
-    {     
+    {
+        static int CalculSommeEntiers(int debut, int fin)
+        {
+            int somme = 0;
+
+            for (int i = debut; i <= fin; i++)
+            {
+                somme += i;
+            }
+
+            return somme;
+        }
+
+        static double CalculMoyenne(List<double> liste)
+        {
+            double total = 0;
+            double moyenne = 0;
+            int nombreElement = liste.Count;
+
+            foreach(double element in liste)
+            {
+                total += element;
+            }
+
+            moyenne = total / nombreElement;
+
+            return moyenne;
+        }
+
+        static int CalculElement()
+        {
+            List<int> multipleTrois = new List<int>();
+            List<int> multipleCinq = new List<int>();
+            int result = 0;
+
+            for (int i = 0; i <= 100; i++)
+            {
+                multipleTrois.Add(i * 3);
+            }
+
+            for (int i = 0; i <= 100; i++)
+            {
+                multipleCinq.Add(i * 5);
+            }
+
+            foreach (int chiffreTrois in multipleTrois)
+            {
+                foreach (int chiffreCinq in multipleCinq)
+                {
+                    if(chiffreTrois == chiffreCinq)
+                    {
+                        result += chiffreTrois;
+                    }
+                }
+            }
+
+            return result; 
+        }
+
         static void Main(string[] args)
         {
-            string utilisateur = Environment.UserName;
-            int heureCourante = DateTime.Now.Hour;
+            //Console.WriteLine(CalculSommeEntiers(1, 10));
+            //Console.WriteLine(CalculSommeEntiers(1, 100));
 
-            if(DateTime.Now.DayOfWeek == DayOfWeek.Monday)
-            {
-                if(heureCourante < 9)
-                {
-                    Console.WriteLine("Bon week-end " + utilisateur);
-                }
-                else if (heureCourante >= 9 && heureCourante <= 18)
-                {
-                    Console.WriteLine("Bonjour " + utilisateur);
-                }
-                else if (heureCourante > 18)
-                {
-                    Console.WriteLine("Bonsoir " + utilisateur);
-                }
-            }
-            if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday || DateTime.Now.DayOfWeek == DayOfWeek.Wednesday || DateTime.Now.DayOfWeek == DayOfWeek.Thursday)
-            {
-                if(heureCourante >= 9 && heureCourante <= 18)
-                {
-                    Console.WriteLine("Bonjour " + utilisateur);
-                }
-                else if(heureCourante < 9 || heureCourante > 18)
-                {
-                    Console.WriteLine("Bonsoir " + utilisateur);
-                }
-            }
-            else if(DateTime.Now.DayOfWeek == DayOfWeek.Friday)
-            {
-                if(heureCourante < 9)
-                {
-                    Console.WriteLine("Bonsoir " + utilisateur);
-                }
-                else if (heureCourante >= 9 && heureCourante <= 18)
-                {
-                    Console.WriteLine("Bonjour " + utilisateur);
-                }
-                else if(heureCourante > 18)
-                {
-                    Console.WriteLine("Bon week-end " + utilisateur);
-                }
-            }
-            else if(DateTime.Now.DayOfWeek == DayOfWeek.Saturday || DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
-            {
-                Console.WriteLine("Bon week-end " + utilisateur); 
-            }
+            //List<double> liste = new List<double> { 1.0, 5.5, 9.9, 2.8, 9.6 };
+            //Console.WriteLine(CalculMoyenne(liste));
+
+            //Console.WriteLine(CalculElement());
         }
+
+        
     }
 }
