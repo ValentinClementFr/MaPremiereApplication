@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MaPremiereApplication
 {
     class Program
-    {
+    {     
         static void Main(string[] args)
         {
-            Console.WriteLine("Test GitHub");
+            Console.WriteLine(Environment.UserName);
         }
     }
 }

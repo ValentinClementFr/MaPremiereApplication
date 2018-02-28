@@ -1,0 +1,11 @@
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\bin\Debug\netcoreapp2.0\MaPremiereApplication.deps.json
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\bin\Debug\netcoreapp2.0\MaPremiereApplication.runtimeconfig.json
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\bin\Debug\netcoreapp2.0\MaPremiereApplication.runtimeconfig.dev.json
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\bin\Debug\netcoreapp2.0\MaPremiereApplication.dll
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\bin\Debug\netcoreapp2.0\MaPremiereApplication.pdb
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.csprojResolveAssemblyReference.cache
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.csproj.CoreCompileInputs.cache
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.AssemblyInfoInputs.cache
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.AssemblyInfo.cs
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.dll
+C:\Users\vaclement\Desktop\CSharp\MaPremiereApplication\MaPremiereApplication\obj\Debug\netcoreapp2.0\MaPremiereApplication.pdb
