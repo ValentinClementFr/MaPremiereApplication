@@ -8,6 +8,7 @@ namespace MaPremiereApplication
 {
     class Program
     {
+        /*
         static int CalculSommeEntiers(int debut, int fin)
         {
             int somme = 0;
@@ -26,7 +27,7 @@ namespace MaPremiereApplication
             double moyenne = 0;
             int nombreElement = liste.Count;
 
-            foreach(double element in liste)
+            foreach (double element in liste)
             {
                 total += element;
             }
@@ -56,14 +57,14 @@ namespace MaPremiereApplication
             {
                 foreach (int chiffreCinq in multipleCinq)
                 {
-                    if(chiffreTrois == chiffreCinq)
+                    if (chiffreTrois == chiffreCinq)
                     {
                         result += chiffreTrois;
                     }
                 }
             }
 
-            return result; 
+            return result;
         }
 
         static void Main(string[] args)
@@ -76,7 +77,51 @@ namespace MaPremiereApplication
 
             //Console.WriteLine(CalculElement());
         }
+        */
 
-        
+        static void Main(string[] args)
+        {
+            List<int> numerosLoto = CreationGrilleLoto(1, 49);
+
+            int[] loto = CreationLoto(7, numerosLoto);
+
+            AffichageNumeroLoto(loto);
+        }
+
+        static List<int> CreationGrilleLoto(int numMinLoto, int numMaxLoto)
+        {
+            List<int> grilleLoto = new List<int>();
+
+            for (int i = numMinLoto; i <= numMaxLoto; i++)
+            {
+                grilleLoto.Add(i);
+            }
+
+            return grilleLoto;
+        }
+
+        static int[] CreationLoto(int nombreBouleLoto, List<int> numerosLoto)
+        {
+            int[] loto = new int[nombreBouleLoto];
+
+            for (int i = 0; i < loto.Length; i++)
+            {
+                Random randNum = new Random();
+                int numeroAleatoire = numerosLoto[randNum.Next(numerosLoto.Count)];
+
+                loto[i] = numeroAleatoire;
+                numerosLoto.Remove(numeroAleatoire);
+            }
+
+            return loto;
+        }
+
+        static void AffichageNumeroLoto(int[] loto)
+        {
+            foreach (int numeroLoto in loto)
+            {
+                Console.WriteLine(numeroLoto);
+            }
+        }
     }
 }
